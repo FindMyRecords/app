@@ -1,16 +1,12 @@
-import React from "react";
-import { render } from "react-dom";
-import DevTools from "mobx-react-devtools";
-import Button from 'material-ui/Button';
-import Sidebar from './components/sidebar/Sidebar';
-import Results from './components/results/Results';
-import ModalWelcome from './components/modals/ModalWelcome';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+import ResultStore from './stores/ResultStore';
+import { Provider  } from 'mobx-react';
 
-render(
-  <div>
-    <Sidebar/>
-    <Results/>
-    <ModalWelcome/>
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(
+    <Provider resultStore={ResultStore}>
+        <App  />
+    </Provider>, document.getElementById('root'));
+registerServiceWorker();

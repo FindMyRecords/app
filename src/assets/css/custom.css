@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Book.otf');
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+.flex { 
+    display:flex;
+}
+
+.sidebar {
+    background-color:#343a40!important;
+    height:100vh;
+    color: #fff;
+    font-family: Gotham;
+}
+
+.footer {
+    text-align: center;
+    font-size:10px;
+}
+
+.results {
+    background-color:#212529;
+    font-family: Gotham;  
+    width:100%;  
+    padding:0 20px;
+}
+
+.progress-border {
+    margin: 15px 0;
+    border-bottom:2px solid #333;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.search-button {
+    width:100%;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+.discogs-user-picture {
+    margin:0 20px 0 10px;
+    height:100px;
+    width:100px;
+}
+
+.spinner-parsing {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.spinner {
+    width:300px;
+}
+
+.state-parsing {
+    color:white;
+    text-align:center;
+}
+
+.not-found {
+    color:white;
+}
+
+.wantlist-button {
+    margin-top: 25px;
+    margin-left: auto;
+    height: 36px;
+}
+
+.no-negative-margin {
+    margin:0;
+}
+
+.wantlist-track {
+    padding:10px;
+    height:50px;
+}
+
+.some-of-tracks {
+    color:white;
+}
+
+.white {
+    color:white;    
+}
+
+.custom-card-padding {
+    padding: 3px !important;
+}
+
+.artists {
+    font-size:10px;
+}
+
+.filters-container {
+    margin-top: 23px;
+    margin-left: 55px;
+}
+
+.absolute-position {
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 58%; /* position the left edge of the element at the middle of the parent */
+    width:400px;
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
+
+.label-filters {
+    margin:0;
+    margin-left:15px;
+}
+
+.switch_box {
+    height:100px !important;
+    width:100px;
+}
+
+.filters-centering {
+    width:62%;
+    margin:auto;
+}
+
+input[type="checkbox"].switch_1:checked { 
+    background : #007bff !important;
+}

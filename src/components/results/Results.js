@@ -1,18 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { observer, inject } from 'mobx-react';
+
 import LoadingBar from './LoadingBar';
 import TableResult from './TableResult';
+import DiscogsResult from './DiscogsResult';
+import Filters from './Filters';
 
+@inject('resultStore')
+@observer
 export default class Results extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
-    render () {
+    render() {
         return (
-            <div>
+            <section className="results">
                 <LoadingBar />
+                <DiscogsResult/>
+                <Filters />
                 <TableResult />
-            </div>
+            </section>
         )
     }
 }
