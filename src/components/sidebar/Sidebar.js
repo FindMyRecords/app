@@ -1,7 +1,7 @@
 import React from 'react'
-import Logo from './Logo';
-import Searchbar from './Searchbar';
-import Footer from './Footer';
+import Logo from './partials/Logo';
+import Searchbar from './partials/Searchbar';
+import Footer from './partials/Footer';
 
 export default class Sidebar extends React.Component {
     render () {

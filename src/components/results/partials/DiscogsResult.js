@@ -10,7 +10,10 @@ export default class DiscogsResult extends React.Component {
         document.getElementById('user-discogs').className += ' fadeOutRight';
         setTimeout(() => {
             this.props.resultStore.prototype.state.selectFilters = true;
-        }, 400)
+        }, 400);
+        setTimeout(() => {
+            document.getElementById('user-discogs').style.display = "none";
+         }, 2000);
     }
 
     render() {
@@ -32,12 +35,12 @@ export default class DiscogsResult extends React.Component {
                     <div className="card text-white bg-dark mb-3 animated fadeIn">
                         <div className="card-header">{user.username}</div>
                         <div className="card-body flex">
-                            <img src={user.avatar_url} alt="Avatar Discogs" className="discogs-user-picture img-thumbnail" />
+                            <img src={user.avatarUrl} alt="Avatar Discogs" className="discogs-user-picture img-thumbnail" />
                             <div>
-                                <h4 className="card-title">Rating average : {user.rating_avg}</h4>
+                                <h4 className="card-title">Rating average : {user.ratingAvg}</h4>
                                 <p className="card-text">{user.location}</p>
                             </div>
-                            <button type="button" className="btn btn-primary wantlist-button" onClick={() => this.parseWantList(user.wantlist_url)}> Parse WantList </button>
+                            <button type="button" className="btn btn-primary wantlist-button" onClick={() => this.parseWantList(user.wantlistUrl)}> Parse WantList </button>
                         </div>
                     </div>
                     <h4 className="some-of-tracks"> Some of his tracks </h4> <hr />

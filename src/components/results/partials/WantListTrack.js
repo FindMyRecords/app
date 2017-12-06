@@ -11,10 +11,10 @@ export default class WantListTrack extends React.Component {
                 <div className="wantlist-track card text-white bg-dark mb-2 animated fadeIn ">
                     <div className="card-body custom-card-padding">
                         <div>
-                            <p className="card-title"> {track.basic_information.title}
+                            <p className="card-title"> {track.title}
                             &nbsp; - &nbsp;
                                 <span className="artists">
-                                        {track.basic_information.artists.map(artist => {
+                                        {track.artists.map(artist => {
                                             return artist.name
                                         })}
                                 </span>
