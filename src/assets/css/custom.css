@@ -7,6 +7,9 @@ body {
     overflow:hidden;
 }
 
+a {
+    color: #007bff;
+}
 h3 {
     text-align:center;
     margin-top:20px;
