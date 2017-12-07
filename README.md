@@ -1,4 +1,6 @@
-## FindMyRecords App
+# FindMyRecords App
+
+## Summary
 
 This is a React + MobX project.
 
@@ -34,7 +36,7 @@ Here is a complete Flux pattern for React App :
 
 - The user receive the initial store with the default state. The state cointainer used is Mobx. (`Store`)
 - He will perform a search for a Discogs Profile in the searchbar. (`React Views/User interactions`)
-- The requests to the APIs Services. (`Actions Creators`)
+- APIs Services ask data to the API. (`Actions Creators`)
 - As APIs Services callbacks are in the store, (`Callbacks`)
 - the store will receive data and modify the state. (`Store`)
 - The view is updated. (`Change Events`)
@@ -73,7 +75,7 @@ If the progressBar state is modified by a MobX derivation, it view value will be
             })
     }
 
-It calls the API Discogs method `discogsService.getDiscogsWantList()` and once the callback is received it will update the wantList state value wantList, and the progressBar state value, performing view updating.
+It calls the API Discogs method `discogsService.getDiscogsWantList()` and once the callback is received it will update the state value wantList, and the progressBar state value, performing view updating.
 
 
 ## Openings :
