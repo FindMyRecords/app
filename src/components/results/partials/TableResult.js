@@ -31,7 +31,7 @@ export default class TableResult extends React.Component {
         }
 
         return (
-            <div className="absolute-position col-9">
+            <div className="">
                 {content}
             </div>
         )

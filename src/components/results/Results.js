@@ -1,10 +1,10 @@
 import React from 'react';
 import { observer, inject } from 'mobx-react';
 
-import LoadingBar from './LoadingBar';
-import TableResult from './TableResult';
-import DiscogsResult from './DiscogsResult';
-import Filters from './Filters';
+import LoadingBar from './partials/LoadingBar';
+import TableResult from './partials/TableResult';
+import DiscogsResult from './partials/DiscogsResult';
+import Filters from './partials/Filters';
 
 @inject('resultStore')
 @observer
