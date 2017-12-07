@@ -22,7 +22,7 @@ export default class TableResult extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.props.resultStore.prototype.state.resultsJuno.map(juno => {
+                            {this.props.resultStore.prototype.state.resultJuno.map(juno => {
                                 <Result juno={juno} />
                             })}
                         </tbody>

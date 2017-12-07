@@ -62,8 +62,8 @@ export default class ResultsStore {
     @action newSearch = () => {
         this.state.selectFilters = false;
         this.state.isParsing = false;
+        this.state.discogsUser = null;        
         this.state.wantList = [];
-        this.state.discogsUser = null;
         this.state.loadingBar = 0;
     }
 }
