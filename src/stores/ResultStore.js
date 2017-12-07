@@ -49,7 +49,7 @@ export default class ResultsStore {
         this.state.isParsing = true;
         for(let want of this.state.wantList) {
             // this.junoService.get(want.basic_information.artists[0].name, want.basic_information.title).then(response => {
-                this.resultJuno.push(response);
+                // this.resultJuno.push(ressponse);
             // })           
         }
     }
