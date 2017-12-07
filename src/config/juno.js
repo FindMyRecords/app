@@ -1,4 +1,4 @@
 const junoConfig = {
-    API_URL: 'localhost:30001/'
+    API_URL: 'http://localhost:3001/'
 };
 export default junoConfig

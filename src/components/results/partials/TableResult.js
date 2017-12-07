@@ -12,7 +12,7 @@ export default class TableResult extends React.Component {
         if (this.props.resultStore.prototype.state.isParsing) {
             content =
                 <div className="animated fadeIn">
-                    <table class="table table-dark">
+                    <table className="table table-dark">
                         <thead>
                             <tr>
                                 <th scope="col">Artist</th>
@@ -22,8 +22,8 @@ export default class TableResult extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.props.resultStore.prototype.state.resultsJuno.map((juno, index) => {
-                                <Result key={index} juno={juno} />
+                            {this.props.resultStore.prototype.state.resultsJuno.map(juno => {
+                                <Result juno={juno} />
                             })}
                         </tbody>
                     </table>

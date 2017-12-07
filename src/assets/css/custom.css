@@ -13,9 +13,10 @@ h3 {
     text-shadow: 2px 2px black;
 }
 
-footer {
-    position:absolute;
-    bottom:0;
+footer > div > ul {
+    position: absolute;
+    bottom: 13px;
+    width: 80%;
 }
 
 .flex { 
@@ -154,3 +155,10 @@ footer {
 input[type="checkbox"].switch_1:checked { 
     background : #007bff !important;
 }
+
+
+@media screen and (max-width: 830px) {
+    h3 {
+        font-size: 0.75rem;
+    }
+  }

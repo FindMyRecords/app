@@ -3,14 +3,13 @@ import React from 'react'
 export default class Footer extends React.Component {
     render() {
         return (
-            <footer className="container">
-                <div className="row align-items-start">
-                    <div className="col">
+            <footer>
+                <div>
                         <ul className="list-inline footer">
-                            {/* <li class="list-inline-item">Find My Records ©</li> */}
-                            {/* <li class="list-inline-item">Donation</li> */}
+                            <li className="list-inline-item"><a href="#"> Find My Records ©</a></li>
+                            <li className="list-inline-item">Eliott Maincourt</li>
+                            <li className="list-inline-item">Samuel Benaïs</li>
                         </ul>
-                    </div>
                 </div>
             </footer>
         )

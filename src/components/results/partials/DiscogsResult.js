@@ -39,7 +39,7 @@ export default class DiscogsResult extends React.Component {
                             <div>
                                 <h4 className="card-title">Rating average : {user.ratingAvg}</h4>
                                 <p className="card-text">{user.location}</p>
-                                <p className="card-text">{user.wantlistNb} tracks -  <a className="card-text" href={`https://www.discogs.com/wantlist?user=${user.username}`}> {user.username} WantList URL</a> </p>
+                                <p className="card-text">{user.wantlistNb} tracks -  <a className="card-text" href={`https://www.discogs.com/wantlist?user=${user.username}`}>WantList URL</a> </p>
                             </div>
                             <button type="button" className="btn btn-primary wantlist-button" onClick={() => this.parseWantList(user.wantlistUrl)}> Parse WantList </button>
                         </div>

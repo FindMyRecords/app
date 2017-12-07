@@ -7,7 +7,7 @@ class JunoService {
     }
 
     get = (artist, title) => {
-        return axios.get(this.API_URL + `/reference?artist=${artist}&title=${title}`);     
+        return axios.get(this.API_URL + `reference?artists=${encodeURIComponent(artist)}&title=${encodeURIComponent(title)}`);     
     }
 }
 
