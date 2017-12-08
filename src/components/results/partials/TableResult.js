@@ -8,7 +8,7 @@ export default class TableResult extends React.Component {
     render() {
         let props = this.props;
         let content = null;
-
+console.log(props);
         if (this.props.resultStore.prototype.state.isParsing) {
             content =
                 <div className="animated fadeIn">
@@ -22,8 +22,8 @@ export default class TableResult extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.props.resultStore.prototype.state.resultJuno.map(juno => {
-                                <Result juno={juno} />
+                            {props.resultStore.prototype.state.resultJuno.map(juno => {
+                                if(juno.data.name !== undefined || juno.data.match == true) return <Result juno={juno} />
                             })}
                         </tbody>
                     </table>
