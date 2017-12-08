@@ -13,7 +13,7 @@ allowing to use, for example, ES6 and decorators.
 
 ![Image of Yaktocat](https://mobx.js.org/getting-started-assets/overview.png)
 
-States are the source of the truth : it contains the current state of our applications as :
+States are the source of the truth : it contains the current state of our application as :
 
 - Steps of the user in the webapp
 - Current discogs user searched
@@ -22,7 +22,7 @@ States are the source of the truth : it contains the current state of our applic
 - Results
 
 This state will be put in a Store, which will be injected in components which need it.
-The store provides Observable data, i.e. the data will be updated in the view when MobX Derivations (Computations...).
+The store provides Observable data, i.e. the data will be evaluated in the view when MobX Derivations (Computations...)
 are performed. 
 
 ## Flux pattern 
@@ -61,7 +61,7 @@ We simply need to add `observer` and `inject` decorators in our component to obs
 
 If the progressBar state is modified by a MobX derivation, it view value will be updated.
 
-### A example of a Action in the Store :
+### A example of an Action in the Store :
     @action getDiscogsWantList = (url) => {
         discogsService.getDiscogsWantList(url)
             .then((response) => {
