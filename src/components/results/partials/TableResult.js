@@ -24,8 +24,9 @@ export default class TableResult extends React.Component {
                         </thead>
                         <tbody>
                             {props.resultJuno.map(juno => {
-                                if (juno.data.name !== undefined || juno.data.match === true)
-                                    return <Result key={juno.data.title} juno={juno} />
+                                console.log(juno)
+                                if (juno.name !== undefined || juno.match === true)
+                                    return <Result key={juno.title} juno={juno} />
                             })}
                         </tbody>
                     </table>

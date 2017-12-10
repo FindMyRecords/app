@@ -170,9 +170,25 @@ input[type="checkbox"].switch_1:checked {
     font-weight: bold;
 }
 
+.green > a {
+    color: inherit;
+}
+
+.green > a:hover {
+    text-decoration: none;
+}
+
 .red {
     color: red;
     font-weight: bold;    
+}
+
+.red > a {
+    color: inherit;
+}
+
+.red > a:hover {
+    text-decoration: none;
 }
 
 .results-container {

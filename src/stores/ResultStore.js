@@ -5,6 +5,8 @@ import junoService from '../services/JunoService';
 
 import WantItem from '../models/WantItem';
 import DiscogsUser from '../models/DiscogsUser';
+import Result from '../models/Result';
+
 
 export default class ResultsStore {
     @observable state = ({
@@ -59,7 +61,7 @@ export default class ResultsStore {
         for (let want of this.state.wantList) {
             junoService.get(want.artists[0].name, want.title).then(response => {
                 this.state.loadingBar += (1/this.state.wantList.length) * 100;
-                this.state.resultJuno.push(response);
+                this.state.resultJuno.push(new Result(response));
             }).catch(function (error) {
                 console.log(error);
             });
