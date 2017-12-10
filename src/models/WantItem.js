@@ -8,7 +8,6 @@ export default class WantItem {
     id;
     title;
     artists;
-
     price;
     available;
 }

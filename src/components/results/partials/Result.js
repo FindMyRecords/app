@@ -6,15 +6,14 @@ import { observer, inject } from 'mobx-react';
 export default class Result extends React.Component {
 
     render() {
-        console.log(this.props);
-        let props = this.props;
+        let props = this.props.juno.data;
 
         return (
             <tr>
-                <th scope="row">{props.juno.data.artists}</th>
-                <td>{props.juno.data.title}</td>
-                <td>{props.juno.data.price}</td>
-                <td>{props.juno.data.available ? "Yes" : "No"}</td>
+                <th scope="row">{props.artists}</th>
+                <td>{props.title}</td>
+                <td>{props.price}</td>
+                <td className={props.available ? 'green' : 'red'}>{props.available ? "Yes" : "No"}</td>
             </tr>
         )
     }

@@ -12,11 +12,11 @@ export default class WantListTrack extends React.Component {
                     <div className="card-body custom-card-padding">
                         <div>
                             <p className="card-title"> {track.title}
-                            &nbsp; - &nbsp;
+                                &nbsp; - &nbsp;
                                 <span className="artists">
-                                        {track.artists.map(artist => {
-                                            return artist.name
-                                        })}
+                                    {track.artists.map(artist => {
+                                        return artist.name
+                                    })}
                                 </span>
                             </p>
                         </div>

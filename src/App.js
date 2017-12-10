@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-import ResultStore from './stores/ResultStore';
-
-import Results from './components/results/Results';
-import Sidebar from './components/sidebar/Sidebar';
+import ResultsContainer from './components/results/ResultsContainer';
+import SidebarContainer from './components/sidebar/SidebarContainer';
 
 import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/css/custom.css';
@@ -14,8 +12,8 @@ class App extends Component {
   render() {
     return (
       <div className="flex">
-          <Sidebar />
-          <Results store={ResultStore}/>
+        <SidebarContainer />
+        <ResultsContainer />
       </div>
     );
   }

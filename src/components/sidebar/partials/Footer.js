@@ -5,11 +5,11 @@ export default class Footer extends React.Component {
         return (
             <footer>
                 <div>
-                        <ul className="list-inline footer">
-                            <li className="list-inline-item"><a href="#"> Find My Records ©</a></li>
-                            <li className="list-inline-item">Eliott Maincourt</li>
-                            <li className="list-inline-item">Samuel Benaïs</li>
-                        </ul>
+                    <ul className="list-inline footer">
+                        <li className="list-inline-item"><a href="https://github.com/FindMyRecords"> Find My Records ©</a></li>
+                        <li className="list-inline-item">Eliott Maincourt</li>
+                        <li className="list-inline-item">Samuel Benaïs</li>
+                    </ul>
                 </div>
             </footer>
         )

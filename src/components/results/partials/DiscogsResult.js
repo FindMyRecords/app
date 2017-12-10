@@ -13,7 +13,7 @@ export default class DiscogsResult extends React.Component {
         }, 400);
         setTimeout(() => {
             document.getElementById('user-discogs').style.display = "none";
-         }, 2000);
+        }, 1000);
     }
 
     render() {
