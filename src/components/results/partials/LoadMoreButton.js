@@ -15,6 +15,8 @@ export default class LoadMoreButton extends React.Component {
 
         if (props.loadingBar > 99.9 && props.loadingBar < 100.1 && props.currentPagination !== props.totalPagination) {
             content = <button type="button" className="btn btn-primary animated fadeIn" onClick={() => this.loadMore()}> Load more  </button>
+        } else if (props.loadingBar > 99.9 && props.loadingBar < 100.1 && props.currentPagination === props.totalPagination) {
+            content = <p className="finish"> You've parsed all the want list ! </p>
         }
 
         return (
